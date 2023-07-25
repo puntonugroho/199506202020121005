@@ -33,14 +33,14 @@ class Welcome extends CI_Controller {
 				$data['nip'][] = $key[$i]->nip;
 				$data['satuan_kerja'][] = $key[$i]->satuan_kerja;
 				$data['posisi_yang_dipilih'][] = $key[$i]->posisi_yang_dipilih;
-				$data['bahasa'][] = $key[$i]->bahasa_pemrograman_yang_dikuasai;
-				$data['framework'][] = $key[$i]->framework_bahasa_pemrograman_yang_dikuasai;
-				$data['db'][] = $key[$i]->database_yang_dikuasai;
-				$data['tool'][] = $key[$i]->tools_yang_dikuasai;
-				$data['mobile'][] = $key[$i]->pernah_membuat_mobile_apps;
-				if($key[$i]->id == $data_atribut[i]->id_pendaftar){
-
-				}
+				// $data['bahasa'][] = $key[$i]->bahasa_pemrograman_yang_dikuasai;
+				// $data['framework'][] = $key[$i]->framework_bahasa_pemrograman_yang_dikuasai;
+				// $data['db'][] = $key[$i]->database_yang_dikuasai;
+				// $data['tool'][] = $key[$i]->tools_yang_dikuasai;
+				// $data['mobile'][] = $key[$i]->pernah_membuat_mobile_apps;
+				// if($key[$i]->id == $data_atribut[i]->id_pendaftar){
+					
+				// }
 				$no++;
 			}
 			
