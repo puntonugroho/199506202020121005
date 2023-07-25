@@ -880,7 +880,7 @@
                     <td><?= $nip[$i] ?></td>
                     <td><?= $satuan_kerja[$i] ?></td>
                     <td><?= $posisi_yang_dipilih[$i] ?></td>
-                    <td>X</td>
+                    <td><button type="button" class="btn btn-block btn-primary btn-sm"><i class="fas fa-edit"></i></button></td>
                   </tr>
                   <?php } ?>
                   </tbody>
