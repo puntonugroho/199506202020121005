@@ -28,6 +28,7 @@ class Welcome extends CI_Controller {
 		// die(var_dump($data_atribut[0]->id_pendaftar));
 		foreach ($data_rekrutmen as $key) {
 			for ($i=0; $i <count($key); $i++) {
+				$data['id'][] = $id;
 				$data['no'][] = $no;
 				$data['nama'][] = $key[$i]->nama;
 				$data['nip'][] = $key[$i]->nip;

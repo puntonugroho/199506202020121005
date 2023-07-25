@@ -236,6 +236,7 @@
                   <tbody>
                     <?php for($i=0; $i<count($no); $i++){ ?>
                   <tr>
+                    <td hidden value="<?php md5($id);?>"></td>
                     <td><?= $no[$i] ?></td>
                     <td><?= $nama[$i] ?></td>
                     <td><?= $nip[$i] ?></td>
