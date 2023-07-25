@@ -23,9 +23,19 @@ class Welcome extends CI_Controller {
 		$data_rekrutmen = json_decode($this->data_rekrutmen());
 		$data_atribut = json_decode($this->data_atribut());
 		
-		// die(var_dump($data_atribut));
-
-		$this->load->view('test');
+		$no=1;
+		foreach ($data_rekrutmen as $key) {
+			for ($i=0; $i <count($key); $i++) {
+				$data['no'][] = $no;
+				$data['nama'][] = $key[$i]->nama;
+				$data['nip'][] = $key[$i]->nip;
+				$data['satuan_kerja'][] = $key[$i]->satuan_kerja;
+				$data['posisi_yang_dipilih'][] = $key[$i]->posisi_yang_dipilih;
+				$no++;
+			}
+			
+		}
+		$this->load->view('test',$data);
 	}
 
 	private function data_rekrutmen()
